@@ -1,0 +1,18 @@
+name: AllInOneEnchant
+version: ${version}
+main: io.github.orrng.allinoneenchant.AllInOneEnchantPlugin
+api-version: '26.1'
+author: orrng
+description: Unlocks anvil enchant combinations while enforcing configurable enchant level limits.
+commands:
+  aioench:
+    description: Reload AllInOneEnchant config.
+    usage: /aioench reload
+    permission: aioenchants.reload
+permissions:
+  aioenchants.reload:
+    description: Allows reloading AllInOneEnchant.
+    default: op
+  aioenchants.bypass:
+    description: Bypasses enchant level and compatibility limits.
+    default: op

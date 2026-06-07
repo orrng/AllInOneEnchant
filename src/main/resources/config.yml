@@ -1,0 +1,36 @@
+# Final enchantment level limit. Your requested default is 15.
+max-enchantment-level: 15
+
+# true: allow enchantments on items that vanilla normally rejects.
+# Example: book enchantments onto otherwise incompatible items.
+allow-unsafe-enchantments: true
+
+# true: allow mutually exclusive enchantments to coexist.
+# Example: Sharpness + Smite.
+allow-conflicting-enchantments: true
+
+# true: if an enchant would exceed max-enchantment-level, block the anvil result.
+# false: clamp the enchant level down to max-enchantment-level.
+block-over-limit: true
+
+# Prevents the vanilla "Too Expensive" result from making the output disappear.
+bypass-too-expensive: true
+
+# Repair cost shown/charged for custom anvil results.
+base-anvil-cost: 1
+cost-per-enchant-level: 1
+maximum-anvil-cost: 255
+
+# Reset prior work penalty on produced items so future combines stay usable.
+reset-prior-work-penalty: true
+
+# Cooldown for warning messages to avoid spam while the anvil recalculates.
+message-cooldown-millis: 1200
+
+messages:
+  prefix: "&6[AllInOneEnchant]&r "
+  reloaded: "&a설정을 다시 불러왔습니다."
+  no-permission: "&c권한이 없습니다."
+  over-limit: "&c%enchant% %level% 레벨은 제한(%max%)을 초과해서 붙일 수 없습니다."
+  incompatible: "&c이 아이템에는 %enchant% 인챈트를 붙일 수 없습니다."
+  conflict: "&c%enchant% 인챈트가 기존 인챈트와 충돌합니다."
